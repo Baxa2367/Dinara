@@ -1,11 +1,11 @@
-/* MARAL — script.js
+/* Dinaraa — script.js
    Қазақ тіліндегі демонстрациялық әйелдер киімі дүкені (hash-маршрутизация, localStorage). */
 'use strict';
 
 /* ============================================================
    1. ТҰРАҚТЫЛАР ЖӘНЕ ДЕРЕКТЕР
    ============================================================ */
-const BRAND = 'MARAL';
+const BRAND = 'Dinaraa';
 const KEYS = { cart: 'maral_cart_v1', fav: 'maral_fav_v1' };
 const MAX_QTY = 10;
 const FREE_DELIVERY_FROM = 50000;
@@ -267,7 +267,7 @@ function setActiveNav(name) {
 function placeholder(label) {
   const t = esc(String(label || '').slice(0, 42));
   const svg = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 800'><rect width='600' height='800' fill='#e9dfcc'/>" +
-    "<text x='300' y='385' text-anchor='middle' font-family='Georgia,serif' font-size='54' fill='#6b4a3a' letter-spacing='8'>MARAL</text>" +
+    "<text x='300' y='385' text-anchor='middle' font-family='Georgia,serif' font-size='54' fill='#6b4a3a' letter-spacing='8'>Dinaraa</text>" +
     "<text x='300' y='435' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#6f645b'>" + t + '</text></svg>';
   return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
 }
@@ -392,7 +392,7 @@ function renderHome() {
     '<h1>Өз стиліңді тап,<br>өзіңді жайлы сезін</h1>' +
     '<p class="lead">Күнделікті өмірге де, ерекше кездесулерге де лайық заманауи әйелдер киімі. Таза сызықтар, жұмсақ маталар және ыңғайлы пішіндер.</p>' +
     '<div class="hero-actions"><a class="btn btn-primary" href="#/catalog">Топтаманы көру</a><a class="btn btn-ghost" href="#/categories">Санаттарды қарау</a></div></div>' +
-    '<div class="hero-media"><img src="' + img('1515886657613-9f3515b0c78f', 1000) + '" alt="MARAL топтамасындағы заманауи әйелдер киімі" width="1000" height="1150"></div>' +
+    '<div class="hero-media"><img src="' + img('1515886657613-9f3515b0c78f', 1000) + '" alt="Dinaraa топтамасындағы заманауи әйелдер киімі" width="1000" height="1150"></div>' +
     '</div></section>' +
 
     '<section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">Санаттар</p><h2>Таңдаулы санаттар</h2></div><a class="link-arrow" href="#/categories">Барлық санаттар</a></div>' +
@@ -412,9 +412,9 @@ function renderHome() {
     '<a class="btn btn-light" href="#/catalog?cat=syrt-kiim">Сырт киімді көру</a></div></div></div></section>' +
 
     '<section class="section section-alt"><div class="container story">' +
-    '<div class="story-img"><img src="' + img('1469334031218-e382a71b716b', 900) + '" alt="MARAL брендінің стилі" loading="lazy"></div>' +
+    '<div class="story-img"><img src="' + img('1469334031218-e382a71b716b', 900) + '" alt="Dinaraa брендінің стилі" loading="lazy"></div>' +
     '<div><p class="eyebrow">Бренд туралы</p><h2>Қарапайымдылық пен сымбат</h2>' +
-    '<p>MARAL — күнделікті өмірде жайлы, ал ерекше сәтте нәзік көрінуге мүмкіндік беретін киімдерге арналған бренд концепциясы. Біз таза пішіндерге, табиғи реңктерге және ұқыпты детальдарға сенеміз.</p>' +
+    '<p>Dinaraa — күнделікті өмірде жайлы, ал ерекше сәтте нәзік көрінуге мүмкіндік беретін киімдерге арналған бренд концепциясы. Біз таза пішіндерге, табиғи реңктерге және ұқыпты детальдарға сенеміз.</p>' +
     '<a class="link-arrow" href="#/about">Толығырақ оқу</a></div></div></section>' +
 
     '<section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">Артықшылықтар</p><h2>Дүкеннің ыңғайлылығы</h2></div></div>' +
@@ -852,18 +852,18 @@ function renderConfirmation() {
    ============================================================ */
 function contactBoxHtml() {
   return '<div class="contact-box"><p class="demo-note" style="margin-top:0">Орынтолтырғыштар: нақты деректерді кейін ауыстырыңыз.</p><dl>' +
-    '<dt>Телефон</dt><dd>[+7 XXX XXX XX XX]</dd><dt>Электрондық пошта</dt><dd>[info@your-domain.kz]</dd>' +
-    '<dt>Мекенжай</dt><dd>[Қала, көше, үй]</dd><dt>Жұмыс уақыты</dt><dd>[Дс–Жс, 10:00–20:00]</dd><dt>Әлеуметтік желілер</dt><dd>[@brand_username]</dd></dl></div>';
+    '<dt>Телефон</dt><dd>[+7 705 361 76 07]</dd><dt>Электрондық пошта</dt><dd>[info@your-domain.kz]</dd>' +
+    '<dt>Мекенжай</dt><dd>[Almaty, avenu Abai, 22]</dd><dt>Жұмыс уақыты</dt><dd>[Дс–Жс, 10:00–20:00]</dd><dt>Әлеуметтік желілер</dt><dd>[@brand_username]</dd></dl></div>';
 }
 function renderAbout() {
   setTitle('Біз туралы');
-  $('#app').innerHTML = pageHead('Біз туралы', 'MARAL — сымбатты қарапайымдылық пен күнделікті жайлылық туралы бренд.') +
+  $('#app').innerHTML = pageHead('Біз туралы', 'Dinaraa — сымбатты қарапайымдылық пен күнделікті жайлылық туралы бренд.') +
     '<div class="container page-body">' +
     '<section class="about-hero"><div><p class="eyebrow">Бренд</p><h2>Киім — өзіңізді сезінудің бір жолы</h2>' +
-    '<p>MARAL — Қазақстандағы заманауи әйелдерге арналған киім дүкенінің концепциясы. Біз күнделікті гардеробты ұтымды әрі көркем етуге ұмтыламыз: әр зат бір-бірімен үйлесіп, күн сайын киюге жайлы болуы тиіс.</p>' +
+    '<p>Dinaraa — Қазақстандағы заманауи әйелдерге арналған киім дүкенінің концепциясы. Біз күнделікті гардеробты ұтымды әрі көркем етуге ұмтыламыз: әр зат бір-бірімен үйлесіп, күн сайын киюге жайлы болуы тиіс.</p>' +
     '<p>Бұл сайттағы тауарлар мен мәтіндер демонстрациялық мақсатта дайындалған және нақты каталогпен ауыстырылады.</p>' +
     '<a class="btn btn-primary" href="#/catalog">Каталогқа өту</a></div>' +
-    '<div class="about-img"><img src="' + img('1469334031218-e382a71b716b', 900) + '" alt="MARAL брендінің эдиториал фотосы" loading="lazy"></div></section>' +
+    '<div class="about-img"><img src="' + img('1469334031218-e382a71b716b', 900) + '" alt="Dinaraa брендінің эдиториал фотосы" loading="lazy"></div></section>' +
 
     '<section class="section"><div class="section-head"><div><p class="eyebrow">Құндылықтар</p><h2>Миссиямыз бен принциптеріміз</h2></div></div>' +
     '<div class="values"><div class="value"><div class="num">01</div><h3>Миссия</h3><p>Әйелдерге күнделікті өмірде өзін сенімді әрі жайлы сезінуге көмектесетін киім ұсыну.</p></div>' +
