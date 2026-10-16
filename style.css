@@ -305,6 +305,15 @@ table.size-table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
 .field input, .field select, .field textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--beige); background: var(--ivory); border-radius: var(--radius); transition: border-color var(--t); }
 .field textarea { min-height: 96px; resize: vertical; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--brown); box-shadow: 0 0 0 3px rgba(107, 74, 58, 0.14); }
+.field input[type="radio"],
+.field input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  flex: 0 0 auto;
+}
+.option-card span { flex: 1; }
 .field.invalid input, .field.invalid select, .field.invalid textarea { border-color: var(--danger); }
 .field-error { margin: 0; font-size: 0.82rem; color: var(--danger); min-height: 0; }
 .field-error:empty { display: none; }
