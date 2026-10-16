@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MARAL — әйелдерге арналған заманауи киім дүкені</title>
+  <meta name="description" content="MARAL — Қазақстандағы әйелдерге арналған заманауи киім дүкені: көйлектер, блузкалар, шалбарлар, сырт киім және аксессуарлар. Демонстрациялық онлайн дүкен.">
+  <meta name="theme-color" content="#faf6ee">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Noto+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Негізгі мазмұнға өту</a>
+
+  <div class="announce" role="note">
+    Демонстрациялық дүкен · 50 000 ₸-ден асатын тапсырыстарға тегін жеткізу (үлгі шарт)
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <button type="button" class="icon-btn menu-toggle" data-action="toggle-menu" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="mainNav">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <a class="logo" href="#/" aria-label="MARAL — басты бет">MARAL</a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Негізгі навигация">
+        <a href="#/" data-nav="home">Басты бет</a>
+        <a href="#/catalog" data-nav="catalog">Каталог</a>
+        <a href="#/categories" data-nav="categories">Санаттар</a>
+        <a href="#/about" data-nav="about">Біз туралы</a>
+      </nav>
+
+      <form class="search-form" id="searchForm" role="search">
+        <label class="sr-only" for="headerSearch">Тауарларды іздеу</label>
+        <input type="search" id="headerSearch" placeholder="Тауарды іздеу…" autocomplete="off">
+        <button type="submit" class="icon-btn" aria-label="Іздеу">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        </button>
+      </form>
+
+      <div class="header-actions">
+        <a class="action-link" href="#/favorites" data-nav="favorites" aria-label="Таңдаулылар">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+          <span class="action-label">Таңдаулылар</span>
+          <span class="counter" id="favCount" hidden>0</span>
+        </a>
+        <a class="action-link" href="#/cart" data-nav="cart" aria-label="Себет">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="action-label">Себет</span>
+          <span class="counter" id="cartCount" hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <div class="loading" role="status">Жүктелуде…</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo logo-light" href="#/">MARAL</a>
+        <p>Әйелдерге арналған заманауи киім: таза сызықтар, жұмсақ маталар және күнделікті жайлылық.</p>
+        <p class="footer-demo">Бұл — демонстрациялық сайт. Тауарлар, бағалар және шарттар үлгі ретінде берілген.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Дүкен</h2>
+        <ul>
+          <li><a href="#/catalog">Каталог</a></li>
+          <li><a href="#/categories">Санаттар</a></li>
+          <li><a href="#/favorites">Таңдаулылар</a></li>
+          <li><a href="#/about">Біз туралы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Көмек</h2>
+        <ul>
+          <li><a href="#/info/delivery">Жеткізу</a></li>
+          <li><a href="#/info/payment">Төлем</a></li>
+          <li><a href="#/info/returns">Қайтару</a></li>
+          <li><a href="#/info/contacts">Байланыс</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Құжаттар</h2>
+        <ul>
+          <li><a href="#/info/privacy">Құпиялылық саясаты</a></li>
+          <li><a href="#/info/terms">Пайдалану шарттары</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© MARAL. Барлық мазмұн демонстрациялық мақсатта жасалған.</p>
+    </div>
+  </footer>
+
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+  <div id="modalRoot"></div>
+
+  <noscript>
+    <p style="padding:24px;text-align:center">Бұл сайт жұмыс істеуі үшін браузерде JavaScript қосылған болуы керек.</p>
+  </noscript>
+</body>
+</html>
